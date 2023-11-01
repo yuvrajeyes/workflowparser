@@ -18,7 +18,7 @@ setup(
     author_email="yuvrajeyes@gmail.com",
     packages=find_packages(),
     install_requires=[
-        'collection==0.1.6'
+        'collection==0.1.6',
         'contourpy==1.1.1',
         'cycler==0.12.1',
         'fonttools==4.43.1',
