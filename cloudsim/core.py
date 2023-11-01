@@ -6,7 +6,7 @@ from abc import ABC, abstractmethod
 import time
 import math
 import copy
-from TreeSet import TreeSet
+from cloudsim.TreeSet import TreeSet
 from cloudsim.NetworkTopology import NetworkTopology
 from cloudsim.Log import Log
 
