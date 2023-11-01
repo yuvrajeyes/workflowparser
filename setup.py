@@ -40,6 +40,6 @@ setup(
         'threadpoolctl==3.2.0',
         'tzdata==2023.3',
 
-        'workflowparser @ https://github.com/yuvrajeyes/workflowparser/archive/main.zip#egg=workflowparser-0.1',
+        # 'workflowparser @ https://github.com/yuvrajeyes/workflowparser/archive/main.zip#egg=workflowparser-0.1',
     ],
 )

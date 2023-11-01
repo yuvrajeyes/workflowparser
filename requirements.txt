@@ -19,11 +19,3 @@ six==1.16.0
 tabulate==0.9.0
 threadpoolctl==3.2.0
 tzdata==2023.3
-
-echo "# workflowparser" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/yuvrajeyes/workflowparser.git
-git push -u origin main
