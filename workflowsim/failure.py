@@ -1,6 +1,4 @@
 from __future__ import annotations
-import sys
-sys.path.append("C:/Users/yuvrajeyes/Desktop/HEFT/")
 
 import numpy as np
 from scipy.stats import lognorm, weibull_min, gamma, norm

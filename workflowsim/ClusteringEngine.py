@@ -1,6 +1,4 @@
 from __future__ import annotations
-import sys
-sys.path.append("C:/Users/yuvrajeyes/Desktop/HEFT/")
 
 from typing import List, cast
 from cloudsim.core import CloudSimTags, SimEntity, SimEvent
@@ -25,7 +23,7 @@ class ClusteringEngine(SimEntity):
         self.cloudletsSubmitted: int = 0
         self.engine: BasicClustering = BasicClustering()
         self.workflowEngine: WorkflowEngine = WorkflowEngine(f"{name}_Engine_0", schedulers)
-        self.workflowEngineId: int = self.workflowEngine.get_id()
+        self.workflowEngineId: int = self.workflowEngine.id
 
 
     def get_workflow_engine_id(self) -> int:
@@ -40,9 +38,9 @@ class ClusteringEngine(SimEntity):
 
 
     def process_clustering(self) -> None:
-        self.engine.set_taskList(self.get_task_list())
+        self.engine.set_taskList(self.taskList)
         self.engine.run()
-        self.set_job_list(self.engine.get_jobList())
+        self.set_job_list(self.engine.jobList)
 
 
     def process_data_staging(self) -> None:
@@ -51,7 +49,7 @@ class ClusteringEngine(SimEntity):
         file_list: List[FileItem] = []
         for file in lst:
             if file.is_real_input_file(lst):
-                ReplicaCatalog.add_file_to_storage(file.get_name(), Parameters.SOURCE)
+                ReplicaCatalog.add_file_to_storage(file.name, Parameters.SOURCE)
                 file_list.append(file)
         job.set_fileList(file_list)
         job.set_class_type(ClassType.STAGE_IN)

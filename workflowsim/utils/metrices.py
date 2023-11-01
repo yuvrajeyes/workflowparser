@@ -1,6 +1,4 @@
 from __future__ import annotations
-import sys
-sys.path.append("C:/Users/yuvrajeyes/Desktop/HEFT/")
 
 from typing import List, Dict, cast
 from cloudsim.Consts import Consts

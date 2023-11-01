@@ -130,9 +130,9 @@ class HEFTExample():
 
     @staticmethod
     def main() -> None:
-        vmNum: int = 20  # number of vms
+        vmNum: int = 5  # number of vms
 
-        daxPath: str = "data\Montage_1000.xml"
+        daxPath: str = "data\Montage_25.xml"
         daxFile = os.path.abspath(daxPath)
         if not os.path.exists(daxFile):
             print("Warning: Please replace dax_path with the physical path in your working environment!")

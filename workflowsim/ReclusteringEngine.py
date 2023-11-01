@@ -1,6 +1,4 @@
 from __future__ import annotations
-import sys
-sys.path.append("C:/Users/yuvrajeyes/Desktop/HEFT/")
 
 import math
 from typing import List, Dict, cast
