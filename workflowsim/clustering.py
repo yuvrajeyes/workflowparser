@@ -1,6 +1,3 @@
-import sys
-sys.path.append("C:/Users/yuvrajeyes/Desktop/HEFT/")
-
 from typing import List, Dict, Union
 from workflowsim.FileItem import FileItem
 from workflowsim.Job import Job

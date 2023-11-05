@@ -1,6 +1,3 @@
-import sys
-sys.path.append("C:/Users/yuvrajeyes/Desktop/HEFT/")
-
 from typing import List, Union
 from enum import Enum
 from workflowsim.utils.ClusteringParameters import ClusteringParameters

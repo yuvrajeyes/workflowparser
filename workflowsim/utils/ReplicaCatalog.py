@@ -1,7 +1,4 @@
 from __future__ import annotations
-import sys
-sys.path.append("C:/Users/yuvrajeyes/Desktop/HEFT/")
-
 from workflowsim.FileItem import FileItem
 from typing import List, Dict
 from enum import Enum

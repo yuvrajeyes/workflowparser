@@ -1,7 +1,4 @@
 from __future__ import annotations
-import sys
-sys.path.append("C:/Users/yuvrajeyes/Desktop/HEFT/")
-
 
 from typing import List
 from cloudsim.Log import Log

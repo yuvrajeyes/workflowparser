@@ -1,6 +1,3 @@
-import sys
-sys.path.append("C:/Users/yuvrajeyes/Desktop/HEFT/")
-
 from typing import List
 from workflowsim.Task import Task
 

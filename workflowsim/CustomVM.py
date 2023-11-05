@@ -1,8 +1,5 @@
 from __future__ import annotations
-import sys
-sys.path.append("C:/Users/yuvrajeyes/Desktop/HEFT/")
 
-from cloudsim.CloudletScheduler import CloudletScheduler
 from workflowsim.CondorVM import CondorVM
 
 

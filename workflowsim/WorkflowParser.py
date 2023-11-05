@@ -1,6 +1,4 @@
 from __future__ import annotations
-import sys
-sys.path.append("C:/Users/yuvrajeyes/Desktop/HEFT/")
 
 from xml.etree import ElementTree as ET
 from typing import List, Final, Dict
