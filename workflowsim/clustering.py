@@ -50,7 +50,7 @@ class BasicClustering():
     def add_tasks_to_job(self, taskList: Union[Task, List[Task]]) -> Job:
         if (isinstance(taskList, Task)):
             tasks: List[Task] = []
-            tasks.append(task)
+            tasks.append(taskList)
             taskList = tasks
 
         if taskList and len(taskList) > 0:
