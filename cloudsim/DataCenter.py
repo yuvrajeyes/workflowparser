@@ -729,8 +729,8 @@ class Datacenter(SimEntity):
 
     def predict_file_transfer_time(self, required_files: List[str]) -> float:
         time: float = 0.0
-        iter: Iterator[str] = iter(required_files)
-        for file_name in iter:
+        files: Iterator[str] = iter(required_files)
+        for file_name in files:
             for i in range(len(self.get_storage_list())):
                 temp_storage: Storage = self.get_storage_list()[i]
                 temp_file: File = temp_storage.get_file(file_name)
